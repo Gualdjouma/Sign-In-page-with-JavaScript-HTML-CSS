@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2876f9;
+  background-image: linear-gradient(315deg, #2876f9 0%, #6d17cb 74%);
+  font-family: Ubuntu;
+}
+
+.box {
+  width: 300px;
+  padding: 30px;
+  background: rgba(211, 211, 211, 0.432);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  text-align: center;
+  color: azure;
+  margin-bottom: 1rem;
+}
+
+.box input[type="text"],
+.box input[type="password"] {
+  width: 100%;
+  text-align: center;
+  background: none;
+  outline: none;
+  border: none;
+  border: 1px solid rgb(252, 252, 252);
+  margin: 14px auto;
+  padding: 12px 28px;
+  border-radius: 25px;
+  color: azure;
+}
+
+::placeholder {
+  color: rgba(41, 38, 38, 0.781);
+}
+
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
+  border: 3px solid lightseagreen;
+}
+
+#btn {
+  font-size: 1rem;
+  font-weight: 900;
+  padding: 12px 5px;
+  margin-top: 25px;
+  border-radius: 20px;
+  color: azure;
+  outline: none;
+  border: none;
+  border: 2px solid white;
+  background: rgba(32, 178, 171, 0.425);
+  box-shadow: inset 0.5rem 0.5rem 2rem #058bf82a;
+}
+
+#btn:hover {
+  transition: all 0.27s ease-in-out;
+  background-color: rgb(5, 177, 168);
+  cursor: pointer;
+}
+
+#btn:active {
+  transition: all 0.27s ease-in-out;
+  background-color: #11dbd1;
+}
